@@ -24,16 +24,15 @@ struct SinglyLinkedListNode *insertNodeAtHead(struct SinglyLinkedListNode *llist
 
     if (llist == NULL)
     {
-        llist = newNode;
-        return llist;        
+        llist = newNode;        
     }
     else
     {
         newNode->data = data;
         newNode->next = llist;
         llist = newNode;
-        return llist;        
     }
+    return llist;
 }
 
 int main()
