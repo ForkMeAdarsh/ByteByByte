@@ -25,7 +25,7 @@ struct SinglyLinkedListNode *reverse(struct SinglyLinkedListNode *llist)
         return llist;         // this base case condition to return the address last node
     }
     struct SinglyLinkedListNode *newHead = reverse(llist->next); // pointer to store the address of last node
-    struct SinglyLinkedListNode *q = llist->next; // pointer variable to point/store the address of node present next to llist pointer variable
+    struct SinglyLinkedListNode *q = llist->next; // we can just simply do "llist->next->next = llist;" in place of this line and the line below // pointer variable to point/store the address of node present next to llist pointer variable
     q->next = llist; // to link the current node to previous node
     llist->next = NULL; // to set the previous node to NULL
     return newHead; // will return the address of last node
