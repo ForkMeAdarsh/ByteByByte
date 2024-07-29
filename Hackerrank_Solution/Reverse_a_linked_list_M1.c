@@ -1,14 +1,14 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-// we can use "typedef struct SinglyLinkedListNode SinglyLinkedListNode;" to shorten the name of our data type from struct SinglyLinkedlistNode to just SinglyLinkedListNode
-typedef struct SinglyLinkedListNode SinglyLinkedListNode;
-
 struct SinglyLinkedListNode
 {
     int data;
     struct SinglyLinkedListNode *next;
 }; // or *head, *second, *third, *fourth, *fifth; // we can set our pointers here itself instead of setting it in the main function and it will act as global pointer variable here
+
+// we can use "typedef struct SinglyLinkedListNode SinglyLinkedListNode;" to shorten the name of our data type from struct SinglyLinkedlistNode to just SinglyLinkedListNode
+typedef struct SinglyLinkedListNode SinglyLinkedListNode;
 
 SinglyLinkedListNode *head; // here we have made our head pointer global pointer variable just because we want to have its access in reverse function call
 
