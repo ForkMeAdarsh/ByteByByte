@@ -85,7 +85,7 @@ int main()
         return 1;
     }
 
-    printf("The max value after checking all the arrays comes out to be %ld", arrayManipulation (soA, noQ));
+    printf("The max value after checking all the arrays comes out to be %ld", arrayManipulation(soA, noQ));
     
     return 0;
 }
