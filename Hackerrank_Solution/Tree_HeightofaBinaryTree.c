@@ -36,6 +36,8 @@ int getHeight(struct Node* root)
         {
             return rightHeight+1; 
         }                            // when left and right heights are equal i.e. our tree is in same level for both left and right sub-tree then when we can return either of these
+        // we can also take use of conditional expression instead of above if and else statement and anyway conditional expression are if and else statements only
+        // return (leftHeight > rightHeight ? leftHeigth : rightHeight)+1;
     }
 }
 
