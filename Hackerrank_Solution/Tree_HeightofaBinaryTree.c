@@ -29,7 +29,7 @@ int getHeight(struct Node* root)
         int leftHeight = getHeight(root->left); // to calculate the height of left sub-tree
         int rightHeight = getHeight(root->right); // to calculate the height of right sub-tree
         if (leftHeight > rightHeight) // checks wheather the height left sub-tree is greater or of right sub-tree and will return its respective height while adding 1 in it
-        {                             // we have added in the left and right height so as identify the position of the current node
+        {                             // we have added 1 in the left and right height so as identify the position of the current node
             return leftHeight+1; 
         }
         else
